@@ -262,7 +262,7 @@ done!
 - Implement file-based configuration for the sbatch script to allow switching of the model and prompt without modifying the script directly.
   One way to do this is to use `yq` (`uv tool install yq`) to read from a YAML configuration file in bash.
 
-## vllm
+## vLLM
 
 vLLM is a high-throughput and memory-efficient inference engine, and it supports a variety of model formats.
 Read through the [vllm quickstart documentation](https://docs.vllm.ai/en/latest/getting_started/quickstart.html#offline-batched-inference).
@@ -338,4 +338,4 @@ curl -X POST http://localhost:8000/v1/completions \
 
 ### exercises
 
-- Implement a sbatch script to run vllm serve using the `ollama.sbatch` as a template.
+- Implement a sbatch script to run vLLM serve using the `ollama.sbatch` as a template.
