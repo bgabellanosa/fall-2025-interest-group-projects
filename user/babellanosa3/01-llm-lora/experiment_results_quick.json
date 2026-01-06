@@ -1,0 +1,41 @@
+{
+  "config": {
+    "dataset_name": "rotten_tomatoes",
+    "model_name": "roberta-base",
+    "max_length": 128,
+    "num_labels": 2,
+    "num_epochs": 3,
+    "batch_size": 16,
+    "learning_rate_full": 2e-05,
+    "learning_rate_lora": 0.0001,
+    "lora_rank": 8,
+    "lora_alpha_ratio": 2,
+    "description": "Quick experiment: Rotten Tomatoes + RoBERTa-base"
+  },
+  "full_finetuning": {
+    "experiment_name": "Full Fine-Tuning",
+    "training_time": 99.00704789161682,
+    "train_loss": 0.2826255135396298,
+    "eval_loss": 0.48974645137786865,
+    "eval_accuracy": 0.8883677298311444,
+    "total_params": 124647170,
+    "trainable_params": 124647170,
+    "trainable_percentage": 100.0
+  },
+  "lora": {
+    "experiment_name": "LoRA Fine-Tuning",
+    "training_time": 71.2131416797638,
+    "train_loss": 0.3342042471213585,
+    "eval_loss": 0.31564420461654663,
+    "eval_accuracy": 0.8808630393996247,
+    "total_params": 126248795,
+    "trainable_params": 1603163,
+    "trainable_percentage": 1.269844199305031
+  },
+  "comparison": {
+    "speedup": 1.3902918135087847,
+    "param_reduction": 77.75077768137113,
+    "accuracy_diff": -0.007504690431519689,
+    "accuracy_retention_pct": 99.15522703273496
+  }
+}
